@@ -28,20 +28,20 @@ or
 npm start projectA  //启动 projectA
 ```
 
-### webpack 打包， npm run build +（项目名）
+### webpack 打包， npm run dist +（项目名）
 
 ```
-npm run build all
-```
-
-or
-
-```
-npm run build
+npm run dist all
 ```
 
 or
 
 ```
-npm run build projectA  //启动 projectA
+npm run dist
+```
+
+or
+
+```
+npm run dist projectA  //启动 projectA
 ```

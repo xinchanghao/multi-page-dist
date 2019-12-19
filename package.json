@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node config/dev.js",
-    "dist": "node config/build.js",
+    "start": "bash config/start.sh",
+    "dist": "bash config/build.sh",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"

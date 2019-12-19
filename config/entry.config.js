@@ -1,4 +1,4 @@
-const entryObj = require("./entry");
+let entryName = process.env.APP_ENTRIES || "all";
 
 const configObj = {
   //项目A
@@ -21,12 +21,8 @@ const configObj = {
   }
 };
 
-const isAll = ["all", "undefined"].includes(entryObj.entryName);
+const isAll = ["all", "undefined"].includes(entryName);
 
-console.log(`===start build ${!isAll ? entryObj.entryName : "all"}===`);
-
-const obj = isAll
-  ? configObj
-  : { [`${entryObj.entryName}`]: configObj[entryObj.entryName] };
+const obj = isAll ? configObj : { [`${entryName}`]: configObj[entryName] };
 
 module.exports = obj;
