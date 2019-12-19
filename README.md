@@ -10,6 +10,8 @@ https://github.com/ChhXin/multi-page-dist/tree/version1
 
 https://github.com/ChhXin/multi-page-dist/tree/version2
 
+不足之处，由于使用了shell脚本，对使用windows环境开发不是十分友好！！
+
 ### devServer 启动，npm start +（项目名）
 
 ```
