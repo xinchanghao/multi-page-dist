@@ -1,4 +1,4 @@
-let projectName = process.argv[2];
+let projectName = process.argv[2] || "all";
 
 let fs = require("fs");
 

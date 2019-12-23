@@ -1,1 +1,1 @@
-exports.entryName = 'projectA'
+exports.entryName = 'all'

@@ -21,12 +21,11 @@ const configObj = {
   }
 };
 
-const isAll = ["all", "undefined"].includes(entryObj.entryName);
+console.log(`===start build===`);
 
-console.log(`===start build ${!isAll ? entryObj.entryName : "all"}===`);
-
-const obj = isAll
-  ? configObj
-  : { [`${entryObj.entryName}`]: configObj[entryObj.entryName] };
+const obj =
+  entryObj.entryName === "all"
+    ? configObj
+    : { [`${entryObj.entryName}`]: configObj[entryObj.entryName] };
 
 module.exports = obj;
