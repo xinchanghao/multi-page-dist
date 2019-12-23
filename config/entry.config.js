@@ -21,8 +21,7 @@ const configObj = {
   }
 };
 
-const isAll = ["all", "undefined"].includes(entryName);
-
-const obj = isAll ? configObj : { [`${entryName}`]: configObj[entryName] };
+const obj =
+  entryName === "all" ? configObj : { [`${entryName}`]: configObj[entryName] };
 
 module.exports = obj;
